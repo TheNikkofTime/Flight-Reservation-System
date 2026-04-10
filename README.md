@@ -105,7 +105,22 @@ USE airline_system;
     ```
 
     - Columns:
-      - `PassengerID` 
+      - `PassengerID`
+      - `firstname`
+      - `lastname`
+      - `address`
+      - `age`
+      - `source`
+      - `dest`
+      - `travelDate`
+      - `class`
+      - `bookingTime`
+      - `npass`
+      - `Flight_ID`
+      - `res_ID`
+      - `seat_num`
+      - `check_in_ID`
+      - `checkInDate`
 
 ---
 
@@ -113,7 +128,7 @@ USE airline_system;
 
 ### Description
 
-Part B takes user input descriptions of the relation name, attributes, functional dependencies, primary keys, and the dataset from Part A (air_system.csv) and performs normalization analysis.
+Part B takes user input on the relation name, attributes, functional dependencies, primary keys, and the dataset from Part A (air_system.csv), and performs normalization analysis.
 
 ### Features
 
@@ -187,3 +202,6 @@ INSERT INTO Reservations (res_ID, seat_num) VALUES ("E1", "EX");
 
 DELETE FROM Reservations WHERE res_ID = "E1";
 ~~~
+
+### Conclusion
+This project is coded in Python and performs database operations using MYSQL Workbench. 
