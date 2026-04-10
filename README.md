@@ -42,6 +42,11 @@ import pymysql
 
 Part A parses passenger data from an XML file and builds a complete airline reservation system.
 
+### Dataset Overview
+
+- **PNR.xml**
+  - Large XML file which 
+
 ### Features
 
 - **XML → DataFrame**
@@ -60,12 +65,14 @@ Part A parses passenger data from an XML file and builds a complete airline rese
     - Travel date
 
 - **Seat Allocation**
-  - First Class: 50 seats
-  - Business Class: 100 seats
-  - Economy Class: 150 seats
-  - Automatically assigns seats
+  - For each flight, there is a maximum number of seats:  
+    - First Class: 50 seats  (__F1-F50__)
+    - Business Class: 100 seats  (__B1-B100__)
+    - Economy Class: 150 seats  (__E1-E150__)
+      
+  - Automatically assigns seats for each passenger based on npass
   - Handles overflow across classes
-    - If the requested class type is full, find the next best class and reserve a open seat. 
+    - If the requested class type is full, find the next best class and reserve an open seat. 
 
 - **Reservation & Check-In Simulation**
   - Generates:
@@ -96,6 +103,9 @@ USE airline_system;
     ```
     air_system.csv
     ```
+
+    - Columns:
+      - `PassengerID` 
 
 ---
 
