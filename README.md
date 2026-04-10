@@ -12,9 +12,10 @@ The project is an extensive example of big data programming: from raw passenger 
 ---
 
 ## Project Structure
-├── Part_A.py 
+Part_A.py 
 - Reservation system & data processing
-├── Part_B.py
+  
+Part_B.py
 - Normalization & query interface
 
 ---
@@ -90,6 +91,18 @@ Part B takes user input descriptions of the relation name, attributes, functiona
   - Attributes
   - Functional dependencies
   - Primary keys
+
+### Example User Input
+
+```python
+# 'airline_system'
+
+# 'PassengerID, firstname, lastname, address, age, source, dest, travelDate, class, bookingTime, npass, Flight_ID, res_ID, seat_num, check_in_ID, checkInDate'
+
+# 'PassengerID->firstname,lastname,address,age,class,bookingTime,npass | Flight_ID->source,dest,travelDate | res_ID->seat_num | check_in_ID->checkInDate'
+
+# 'PassengerID,Flight_ID,res_ID,check_in_ID'
+```
 
 - **Attribute Closure**
   - Computes closures for dependency validation
