@@ -74,6 +74,14 @@ Part A parses passenger data from an XML file and builds a complete airline rese
     - Random check-in times
 
 - **Database Population**
+
+- Create __airline_system__ MYSQL database:
+~~~sql
+DROP DATABASE IF EXISTS airline_system; 
+CREATE DATABASE airline_system; 
+USE airline_system;
+~~~
+  
   - Inserts data into MySQL tables:
     - `passenger`
     - `class`
