@@ -20,6 +20,22 @@ Part_B.py
 
 ---
 
+## Required Python Packages
+Part_A.py
+```python
+import pandas as pd
+from lxml import etree
+import pymysql
+import numpy as np
+```
+
+Part_B.py
+```python
+import pandas as pd
+import numpy as np
+import pymysql
+```
+
 ## Part A: Reservation System
 
 ### Description
